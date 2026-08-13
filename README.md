@@ -8,17 +8,23 @@ top-level directory with its own README, dependencies, and tests.
 | Tool | Description |
 |---|---|
 | [`ip_geo`](ip_geo/) | Look up the country of origin for one or many IP addresses via the free [ip-api.com](https://ip-api.com) service. Standard-library only. |
+| [`windows_logs`](windows_logs/) | Parse Windows Event Log (`.evtx`) files into pandas DataFrames, with channel-specific views (Setup, System). |
 
 ## Repository layout
 
 ```
 tools/
 ├── README.md          # this file
-└── ip_geo/            # IP geolocation utility
-    ├── README.md      # tool-specific docs
-    ├── ip_geo.py      # implementation
+├── ip_geo/            # IP geolocation utility
+│   ├── README.md      # tool-specific docs
+│   ├── ip_geo.py      # implementation
+│   ├── requirements.txt
+│   └── tests/         # unittest suite
+└── windows_logs/      # Windows Event Log (.evtx) parser
+    ├── README.md
+    ├── windows_logs.py
     ├── requirements.txt
-    └── tests/         # unittest suite
+    └── tests/
 ```
 
 ## Getting started
